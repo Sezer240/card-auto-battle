@@ -51,14 +51,14 @@ Ama sen adam değilsin ben Rap titanım
 B-ırakın şu atına bile bakamayan adamı
 Ve- kurak olur hava sıcak olur aman erimesin
 -Tek kelimesi bunun havaya bir karışır
--Bu sulu götüreni kuru kuru geri getirir-
--Kara kalemimi alırım elime çizerim
--Her yeri titret sonra da kirlet
--Yapacağım en iyi iş ise Rap hep
--Ders al, hadi kalk gel koş
--Bak hep uç gel yanıma
--Sen hadi korkmadan es bir deli rüzgârsın
--Sen ırmaklar misali çağla
+- Bu sulu götüreni kuru kuru geri getirir-
+- Kara kalemimi alırım elime çizerim
+- Her yeri titret sonra da kirlet
+- Yapacağım en iyi iş ise Rap hep
+- Ders al, hadi kalk gel koş
+- Bak hep uç gel yanıma
+- Sen hadi korkmadan es bir deli rüzgârsın
+- Sen ırmaklar misali çağla
 Ders al, geri dönüşü yok bunun
 Ölümüne yolu yürürüm ve yokuş olur
 Yolu sorun, bu mu konu?
