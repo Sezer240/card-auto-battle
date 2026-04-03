@@ -87,3 +87,4 @@ Neden Rap?
 A-damın ağzına salıncak kurup hedefime kilidim, ateş ederim
 -Oturup önüme geçeni kelimelerim ile vurup özeti geçerim
 - 
+## Deneme Araba Ali Hatbul
