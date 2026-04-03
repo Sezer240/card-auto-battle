@@ -72,34 +72,34 @@ Ders al, geri dönüşü yok bunun
 Yolu sorun, bu mu konu?
 Hecesi ve kelimesine bu konuşulur
 Neden Rap?
-Bir iki bilene bunu bir danışalım
-Hadi bakalım bize ne diyecekler
-Rap'ine güvenip önüme çıkanın akıbetini asla öğrenemeyecekler
-İki de bir yolumu kesen adı bile bilinemeyen adamın ağız kokusunu çekecekler
-Ödevini de yapamadı diye kafası kırılan adı gibi keriz zarif ama zayıf
-Kendisi ile çelişen o rapçileri dinleyenlerden medet bekleyenler
-Bırakın hadi bu kafa yapısınıda; flow'u, battle'ı, double ryhme'ı, puncline'ı öğren
-Başka sayfayla freestyle'e başla
-Kuralı katı bunun ama durma kaçma
-Senin zaten sözlerinin hepsi saçma
-Tadı kaçtı zati Rap'in yolu biraz açın
-Hadi bana deneme bir iki teleferik ile kenefe giderim
-Adamın ağzına salıncak kurup hedefime kilidim, ateş ederim
-Oturup önüme geçeni kelimelerim ile vurup özeti geçerim
-Bir çelebi gibi gezerim bir sürü talebelerim
-Ve de bu denemelerimi bunu bilin diye hemen önümüze sererim
-O kara tahtaya gene adımı yazıverin
-Ve parasını geri verin hadi hadi
+-Bir iki bilene bunu bir danışalım
+-Hadi bakalım bize ne diyecekler
+-Rap'ine güvenip önüme çıkanın akıbetini asla öğrenemeyecekler
+-İki de bir yolumu kesen adı bile bilinemeyen adamın ağız kokusunu çekecekler
+-Ödevini de yapamadı diye kafası kırılan adı gibi keriz zarif ama zayıf
+-Kendisi ile çelişen o rapçileri dinleyenlerden medet bekleyenler
+-Bırakın hadi bu kafa yapısınıda; flow'u, battle'ı, double ryhme'ı, puncline'ı öğren
+-Başka sayfayla freestyle'e başla
+-Kuralı katı bunun ama durma kaçma
+-Senin zaten sözlerinin hepsi saçma
+-Tadı kaçtı zati Rap'in yolu biraz açın
+-Hadi bana deneme bir iki teleferik ile kenefe giderim
+A-damın ağzına salıncak kurup hedefime kilidim, ateş ederim
+-Oturup önüme geçeni kelimelerim ile vurup özeti geçerim
+-Bir çelebi gibi gezerim bir sürü talebelerim
+-Ve de bu denemelerimi bunu bilin diye hemen önümüze sererim
+-O kara tahtaya gene adımı yazıverin
+-Ve parasını geri verin hadi hadi
 O pis albümlerinize para veren herkesin
 Listeledim hepinizi bir kara sayfaya
 Takılı kaldığınız yaprakları yakıverin
 Sırf konuşuyorsunuz ama boşuna
 Bu konuları bana bırakın, siz evinize gidin
 Yuvanızı kurup işinize bakın
+Sen hadi korkmadan es bir deli rüzgârsın
 Ne de olsa bu Rap geçici heves bi' çoğunuz için
 Ders al, hadi kalk gel koş
 Bak hep uç gel yanıma
-Sen hadi korkmadan es bir deli rüzgârsın
 Sen ırmaklar misali çağla
 Ders al, geri dönüşü yok bunun
 Ölümüne yolu yürürüm ve yokuş olur
