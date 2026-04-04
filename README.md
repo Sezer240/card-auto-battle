@@ -91,4 +91,4 @@ A-damın ağzına salıncak kurup hedefime kilidim, ateş ederim
 
 
 
-sdksjdkjfskfjsk
+asdajshjdha
