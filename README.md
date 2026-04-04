@@ -91,5 +91,5 @@ A-damın ağzına salıncak kurup hedefime kilidim, ateş ederim
 
 
 
-asdajshjdha
+asdajshjdhajhasjaadhjassajhdada
 Alksalksalk 
