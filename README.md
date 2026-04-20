@@ -175,4 +175,4 @@ docs: dokümantasyon güncellendi
 
 ## 📄 Lisans
 
-Bu proje portföy ve öğrenim amaçlı geliştirilmektedir. Lisans bilgisi daha sonra eklenecektir.
+Bu proje, ekip üyelerinin Unity ve Git iş akışını öğrenmek amacıyla birlikte geliştirdiği kapalı bir portföy çalışmasıdır. Tüm haklar ekip üyelerine aittir — izinsiz kullanım, kopyalama veya dağıtım yapılamaz.
