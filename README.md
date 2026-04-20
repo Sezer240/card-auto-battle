@@ -69,7 +69,7 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 
 ```bash
 # 1. Repoyu klonla
-git clone https://github.com/KULLANICI_ADI/card-battler.git
+git clone https://github.com/Sezer240/card-auto-battle.git
 cd card-battler
 
 # 2. Git LFS dosyalarını çek
