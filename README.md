@@ -13,6 +13,11 @@ Oyuncu elindeki kartlarla bir takım kurar, savaşı başlatır ve karakterler o
 - [Kurulum](#-kurulum)
 - [Proje Yapısı](#-proje-yapısı)
 - [Geliştirme Süreci](#-geliştirme-süreci)
+  - [Branch Stratejisi](#branch-stratejisi)
+  - [Commit Kuralları](#commit-kuralları)
+  - [Pull Request Kuralları](#pull-request-kuralları)
+  - [Unity Merge Çakışmalarını Önlemek İçin](#unity-merge-çakışmalarını-önlemek-için)
+  - [Sprint Planı](#sprint-planı)
 - [Katkıda Bulunma](#-katkıda-bulunma)
 - [Ekip](#-ekip)
 
@@ -145,9 +150,7 @@ docs: dokümantasyon güncellendi
 - Büyük dosyalar (ses, sprite, animasyon) için Git LFS kullanın
 - Aynı sahneyi **aynı anda iki kişi düzenlemesin** — sahne sahipliğini kanalda duyurun
 
----
-
-## 🗓 Sprint Planı
+### Sprint Planı
 
 | Sprint | Hafta | Odak | Teslim |
 |--------|-------|------|--------|
