@@ -70,13 +70,13 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 ```bash
 # 1. Repoyu klonla
 git clone https://github.com/Sezer240/card-auto-battle.git
-cd card-battler
+cd card-auto-battle
 
 # 2. Git LFS dosyalarını çek
 git lfs pull
 
 # 3. Unity Hub'dan projeyi aç
-#    File → Open Project → card-battler klasörünü seç
+#    File → Open Project → card-auto-battle klasörünü seç
 
 # 4. Battle sahnesini aç
 #    Assets/Scenes/Battle.unity
