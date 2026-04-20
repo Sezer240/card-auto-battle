@@ -18,7 +18,6 @@ Oyuncu elindeki kartlarla bir takım kurar, savaşı başlatır ve karakterler o
   - [Pull Request Kuralları](#pull-request-kuralları)
   - [Unity Merge Çakışmalarını Önlemek İçin](#unity-merge-çakışmalarını-önlemek-için)
   - [Sprint Planı](#sprint-planı)
-- [Katkıda Bulunma](#-katkıda-bulunma)
 - [Ekip](#-ekip)
 
 ---
