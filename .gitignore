@@ -1,0 +1,58 @@
+# Unity klasörleri
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Uu]ser[Ss]ettings/
+
+# MemoryCaptures
+[Mm]emoryCaptures/
+
+# Asset meta verisi — bunları SİLMEYİN, commit'leyin
+# !/Assets/**/*.meta
+
+# Otomatik üretilen VS/Rider proje dosyaları
+*.csproj
+*.unityproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# Unity3D tarafından üretilen meta dosyaları
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# Unity Editor klasörleri
+/[Aa]ssets/AssetStoreTools*
+
+# IDE
+.vs/
+.idea/
+*.suo
+*.user
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Crash raporları
+smsmsmsms
+crash.log
+crash.dmp
+
+# Paket yöneticisi cache
+/[Pp]ackages/
+!/[Pp]ackages/manifest.json
+!/[Pp]ackages/packages-lock.json
