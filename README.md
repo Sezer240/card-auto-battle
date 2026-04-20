@@ -175,4 +175,4 @@ docs: dokümantasyon güncellendi
 
 ## 📄 Lisans
 
-Bu proje, Unity ve Git iş akışını birlikte öğrenmek amacıyla geliştirilmiş kapalı bir portföy çalışmasıdır.
+Bu proje [MIT Lisansı](LICENSE) ile lisanslanmıştır.
