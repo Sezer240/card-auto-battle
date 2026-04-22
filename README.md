@@ -135,6 +135,7 @@ fix: hata düzeltildi
 refactor: kod yeniden düzenlendi
 art: asset / görsel güncellendi
 docs: dokümantasyon güncellendi
+chore: yardımcı işler (paket güncelleme, config, gitignore vb.)
 ```
 
 ### Pull Request Kuralları
@@ -166,13 +167,14 @@ docs: dokümantasyon güncellendi
 
 ## 👥 Ekip
 
-| Rol | Sorumluluk |
-|-----|------------|
-| **Gameplay** | Savaş motoru, hedef algoritması, sınıf bonusları |
-| **UI/UX** | Kart prefab'ları, sürükle-bırak, menüler, animasyonlar |
-| **Content** | Kart tasarımı, balans tablosu, ScriptableObject veri girişi |
-| **Systems** | Save/load, shop, roguelite ilerleme, AI rakip |
-| **DevOps** | GitHub Actions CI, build pipeline, code review |
+| Üye | Rol | Sorumluluk |
+|-----|-----|------------|
+| [Sezer Çetinkaya](https://github.com/Sezer240) | Proje Lideri / Systems | Proje yönetimi, save/load, roguelite ilerleme, AI rakip |
+| [Ali İstanbullu](https://github.com/Ali-Istanbullu) | Gameplay | Savaş motoru, hedef algoritması, sınıf bonusları |
+| [Zübeyir Aslan](https://github.com/zubeyiraslan) | Content / UI | Kart tasarımı, balans tablosu, sürükle-bırak, menüler |
+| [Junsxx](https://github.com/Junsxx) | DevOps / UI | GitHub Actions CI, build pipeline, code review, animasyonlar |
+
+> Not: GitHub kullanıcı adları ve rol dağılımı ekip içinde teyit edilip güncellenecek.
 
 ---
 
