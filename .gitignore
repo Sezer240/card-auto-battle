@@ -51,7 +51,7 @@ Thumbs.db
 crash.log
 crash.dmp
 
-# Paket yöneticisi cache
-/[Pp]ackages/
-!/[Pp]ackages/manifest.json
-!/[Pp]ackages/packages-lock.json
+# Unity paket cache (Packages/ klasörü commit'lenir; sadece cache ignore)
+/[Pp]ackages/[Pp]ackageCache/
+/[Pp]ackages/com.unity.collab-proxy/Editor/
+
