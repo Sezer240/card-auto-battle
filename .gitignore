@@ -40,6 +40,7 @@
 # IDE
 .vs/
 .idea/
+.vscode/
 *.suo
 *.user
 
