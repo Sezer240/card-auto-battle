@@ -25,7 +25,8 @@ Oyuncu elindeki kartlarla bir takım kurar, savaşı başlatır ve karakterler o
 ## 🎮 Oyun Hakkında
 
 **Tür:** Kart tabanlı auto-battler  
-**Motor:** Unity 6 (C#)  
+**Motor:** Unity 2022.3.62f3 LTS (C#) — Personal lisans için ücretsiz güvenlik patch'i (CVE-2025-59489 fix'li)  
+**Render Pipeline:** URP (3D görsel, 2D oynanış)  
 **Platform:** PC (Windows), WebGL  
 **Durum:** Geliştirme aşamasında
 
@@ -66,7 +67,7 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 
 ### Gereksinimler
 
-- [Unity 6](https://unity.com/releases/editor/archive) (6000.0.x veya üstü)
+- [Unity 2022.3.62f3](https://unity.com/releases/editor/whats-new/2022.3.62f3) — Personal lisans ile ücretsiz, CVE-2025-59489 güvenlik patch'i dahil (2022.3.63f1 ve sonrası Enterprise-only "Extended LTS"; f2/f3 güvenlik amaçlı ücretsiz tutuldu)
 - Git + [Git LFS](https://git-lfs.com/) (büyük asset'ler için)
 
 ### Adımlar
@@ -76,17 +77,19 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 git clone https://github.com/Sezer240/card-auto-battle.git
 cd card-auto-battle
 
-# 2. Git LFS dosyalarını çek
+# 2. Git LFS'i başlat ve dosyaları çek
+git lfs install
 git lfs pull
 
 # 3. Unity Hub'dan projeyi aç
-#    File → Open Project → card-auto-battle klasörünü seç
+#    Open → card-auto-battle klasörünü seç
+#    (ilk açılışta Unity eksik paketleri indirecek, 2–5 dk sürebilir)
 
 # 4. Battle sahnesini aç
-#    Assets/Scenes/Battle.unity
+#    Assets/Scenes/Battle.unity   (sahne henüz yok; Sprint 1'de eklenecek)
 ```
 
-> ⚠️ Unity versiyonu farklıysa proje açılışında upgrade uyarısı çıkabilir. Ekiple aynı versiyonu kullanmaya özen gösterin.
+> ⚠️ Unity versiyonu farklıysa proje açılışında upgrade uyarısı çıkabilir. Ekiple aynı versiyonu kullanmaya özen gösterin (`ProjectSettings/ProjectVersion.txt` referans alır).
 
 ---
 
@@ -132,6 +135,7 @@ fix: hata düzeltildi
 refactor: kod yeniden düzenlendi
 art: asset / görsel güncellendi
 docs: dokümantasyon güncellendi
+chore: yardımcı işler (paket güncelleme, config, gitignore vb.)
 ```
 
 ### Pull Request Kuralları
@@ -163,13 +167,14 @@ docs: dokümantasyon güncellendi
 
 ## 👥 Ekip
 
-| Rol | Sorumluluk |
-|-----|------------|
-| **Gameplay** | Savaş motoru, hedef algoritması, sınıf bonusları |
-| **UI/UX** | Kart prefab'ları, sürükle-bırak, menüler, animasyonlar |
-| **Content** | Kart tasarımı, balans tablosu, ScriptableObject veri girişi |
-| **Systems** | Save/load, shop, roguelite ilerleme, AI rakip |
-| **DevOps** | GitHub Actions CI, build pipeline, code review |
+| Üye | Rol | Sorumluluk |
+|-----|-----|------------|
+| [Sezer Çetinkaya](https://github.com/Sezer240) | Proje Lideri / Systems | Proje yönetimi, save/load, roguelite ilerleme, AI rakip |
+| [Ali İstanbullu](https://github.com/Ali-Istanbullu) | Gameplay | Savaş motoru, hedef algoritması, sınıf bonusları |
+| [Zübeyir Aslan](https://github.com/zubeyiraslan) | Content / UI | Kart tasarımı, balans tablosu, sürükle-bırak, menüler |
+| [Junsxx](https://github.com/Junsxx) | DevOps / UI | GitHub Actions CI, build pipeline, code review, animasyonlar |
+
+> Not: GitHub kullanıcı adları ve rol dağılımı ekip içinde teyit edilip güncellenecek.
 
 ---
 
