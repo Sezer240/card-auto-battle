@@ -167,14 +167,13 @@ chore: yardımcı işler (paket güncelleme, config, gitignore vb.)
 
 ## 👥 Ekip
 
-| Üye | Rol | Sorumluluk |
+| Rol | Üye | Sorumluluk |
 |-----|-----|------------|
-| [Sezer Çetinkaya](https://github.com/Sezer240) | Proje Lideri / Systems | Proje yönetimi, save/load, roguelite ilerleme, AI rakip |
-| [Ali İstanbullu](https://github.com/Ali-Istanbullu) | Gameplay | Savaş motoru, hedef algoritması, sınıf bonusları |
-| [Zübeyir Aslan](https://github.com/zubeyiraslan) | Content / UI | Kart tasarımı, balans tablosu, sürükle-bırak, menüler |
-| [Junsxx](https://github.com/Junsxx) | DevOps / UI | GitHub Actions CI, build pipeline, code review, animasyonlar |
-
-> Not: GitHub kullanıcı adları ve rol dağılımı ekip içinde teyit edilip güncellenecek.
+| **Gameplay** | Arda | Savaş motoru, hedef algoritması, sınıf bonusları |
+| **UI/UX** | Zübeyir | Kart prefab'ları, sürükle-bırak, menüler, animasyonlar |
+| **Content** | Furkan | Kart tasarımı, balans tablosu, ScriptableObject veri girişi |
+| **Systems** | Ali | Save/load, shop, roguelite ilerleme, AI rakip |
+| **DevOps** | Sezer | GitHub Actions CI, build pipeline, code review |
 
 ---
 
