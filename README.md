@@ -25,7 +25,7 @@ Oyuncu elindeki kartlarla bir takım kurar, savaşı başlatır ve karakterler o
 ## 🎮 Oyun Hakkında
 
 **Tür:** Kart tabanlı auto-battler  
-**Motor:** Unity 2022.3.75f1 LTS Extended (C#)  
+**Motor:** Unity 2022.3.62f3 LTS (C#) — Personal lisans için ücretsiz güvenlik patch'i (CVE-2025-59489 fix'li)  
 **Render Pipeline:** URP (3D görsel, 2D oynanış)  
 **Platform:** PC (Windows), WebGL  
 **Durum:** Geliştirme aşamasında
@@ -67,7 +67,7 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 
 ### Gereksinimler
 
-- [Unity 2022.3.75f1 LTS Extended](https://unity.com/releases/editor/archive) — ekipte herkes **aynı** patch versiyonu kullanmalı
+- [Unity 2022.3.62f3](https://unity.com/releases/editor/whats-new/2022.3.62f3) — Personal lisans ile ücretsiz, CVE-2025-59489 güvenlik patch'i dahil (2022.3.63f1 ve sonrası Enterprise-only "Extended LTS"; f2/f3 güvenlik amaçlı ücretsiz tutuldu)
 - Git + [Git LFS](https://git-lfs.com/) (büyük asset'ler için)
 
 ### Adımlar
