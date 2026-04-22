@@ -25,7 +25,8 @@ Oyuncu elindeki kartlarla bir takım kurar, savaşı başlatır ve karakterler o
 ## 🎮 Oyun Hakkında
 
 **Tür:** Kart tabanlı auto-battler  
-**Motor:** Unity 6 (C#)  
+**Motor:** Unity 2022.3.75f1 LTS Extended (C#)  
+**Render Pipeline:** URP (3D görsel, 2D oynanış)  
 **Platform:** PC (Windows), WebGL  
 **Durum:** Geliştirme aşamasında
 
@@ -66,7 +67,7 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 
 ### Gereksinimler
 
-- [Unity 6](https://unity.com/releases/editor/archive) (6000.0.x veya üstü)
+- [Unity 2022.3.75f1 LTS Extended](https://unity.com/releases/editor/archive) — ekipte herkes **aynı** patch versiyonu kullanmalı
 - Git + [Git LFS](https://git-lfs.com/) (büyük asset'ler için)
 
 ### Adımlar
@@ -76,17 +77,19 @@ Clash Royale'den ilham alan kart estetiği ile Teamfight Tactics tarzı otomatik
 git clone https://github.com/Sezer240/card-auto-battle.git
 cd card-auto-battle
 
-# 2. Git LFS dosyalarını çek
+# 2. Git LFS'i başlat ve dosyaları çek
+git lfs install
 git lfs pull
 
 # 3. Unity Hub'dan projeyi aç
-#    File → Open Project → card-auto-battle klasörünü seç
+#    Open → card-auto-battle klasörünü seç
+#    (ilk açılışta Unity eksik paketleri indirecek, 2–5 dk sürebilir)
 
 # 4. Battle sahnesini aç
-#    Assets/Scenes/Battle.unity
+#    Assets/Scenes/Battle.unity   (sahne henüz yok; Sprint 1'de eklenecek)
 ```
 
-> ⚠️ Unity versiyonu farklıysa proje açılışında upgrade uyarısı çıkabilir. Ekiple aynı versiyonu kullanmaya özen gösterin.
+> ⚠️ Unity versiyonu farklıysa proje açılışında upgrade uyarısı çıkabilir. Ekiple aynı versiyonu kullanmaya özen gösterin (`ProjectSettings/ProjectVersion.txt` referans alır).
 
 ---
 
