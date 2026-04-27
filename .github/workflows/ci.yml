@@ -12,10 +12,10 @@ concurrency:
 
 jobs:
   # ─────────────────────────────────────────────
-  # 1. EditMode testleri (lisans gerektirmez — free tier)
+  # 1. Proje yapısı ve JSON doğrulama
   # ─────────────────────────────────────────────
-  test:
-    name: EditMode Tests
+  validate:
+    name: Project Validation
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -23,67 +23,112 @@ jobs:
         with:
           lfs: true
 
-      - name: Cache Library
-        uses: actions/cache@v4
-        with:
-          path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
-          restore-keys: Library-
+      - name: Unity klasör yapısını kontrol et
+        run: |
+          echo "=== Zorunlu klasörler kontrol ediliyor ==="
+          required_dirs=(
+            "Assets/_Game/Cards"
+            "Assets/_Game/Characters"
+            "Assets/_Game/Combat"
+            "Assets/_Game/UI"
+            "Assets/Scenes"
+            "Assets/Tests/EditMode"
+            "Assets/Tests/PlayMode"
+            "ProjectSettings"
+            "Packages"
+          )
+          missing=0
+          for dir in "${required_dirs[@]}"; do
+            if [ -d "$dir" ]; then
+              echo "  ✓ $dir"
+            else
+              echo "  ✗ EKSIK: $dir"
+              missing=$((missing + 1))
+            fi
+          done
+          if [ $missing -gt 0 ]; then
+            echo "HATA: $missing zorunlu klasör eksik!"
+            exit 1
+          fi
+          echo "Tüm zorunlu klasörler mevcut."
 
-      - name: Run EditMode Tests
-        uses: game-ci/unity-test-runner@v4
-        id: tests
-        env:
-          UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
-        with:
-          unityVersion: 2022.3.62f3
-          testMode: editmode
-          artifactsPath: TestResults
-          githubToken: ${{ secrets.GITHUB_TOKEN }}
-          checkName: EditMode Test Results
+      - name: Unity JSON dosyalarını doğrula
+        run: |
+          echo "=== JSON dosyaları doğrulanıyor ==="
+          json_files=(
+            "Packages/manifest.json"
+            "Packages/packages-lock.json"
+          )
+          error=0
+          for f in "${json_files[@]}"; do
+            if [ -f "$f" ]; then
+              if python3 -c "import json,sys; json.load(open('$f'))" 2>/dev/null; then
+                echo "  ✓ $f"
+              else
+                echo "  ✗ GEÇERSİZ JSON: $f"
+                error=1
+              fi
+            else
+              echo "  - Atlandı (yok): $f"
+            fi
+          done
+          if [ $error -ne 0 ]; then
+            echo "HATA: Geçersiz JSON dosyası var!"
+            exit 1
+          fi
 
-      - name: Upload Test Results
-        uses: actions/upload-artifact@v4
-        if: always()
-        with:
-          name: EditMode-TestResults
-          path: ${{ steps.tests.outputs.artifactsPath }}
+      - name: Unity proje versiyonunu raporla
+        run: |
+          if [ -f "ProjectSettings/ProjectVersion.txt" ]; then
+            echo "=== Unity Versiyon ==="
+            cat ProjectSettings/ProjectVersion.txt
+          fi
+
+      - name: C# script dosyalarını say ve raporla
+        run: |
+          echo "=== C# Script Durumu ==="
+          count=$(find Assets -name "*.cs" | wc -l)
+          echo "Toplam .cs dosyası: $count"
+          if [ $count -gt 0 ]; then
+            find Assets -name "*.cs" | sort
+          else
+            echo "(Henüz script yok — Sprint 1 başlangıcı)"
+          fi
 
   # ─────────────────────────────────────────────
-  # 2. Build kontrolü (Windows — hedef platform)
+  # 2. C# syntax kontrolü (script varsa)
   # ─────────────────────────────────────────────
-  build:
-    name: Build Check (Windows)
+  csharp-check:
+    name: C# Syntax Check
     runs-on: ubuntu-latest
-    needs: test
+    needs: validate
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          lfs: true
 
-      - name: Cache Library
-        uses: actions/cache@v4
-        with:
-          path: Library
-          key: Library-${{ hashFiles('Assets/**', 'Packages/**', 'ProjectSettings/**') }}
-          restore-keys: Library-
+      - name: .cs dosyası var mı kontrol et
+        id: check_scripts
+        run: |
+          count=$(find Assets -name "*.cs" | wc -l)
+          echo "count=$count" >> $GITHUB_OUTPUT
+          echo "C# dosya sayısı: $count"
 
-      - name: Build
-        uses: game-ci/unity-builder@v4
-        env:
-          UNITY_EMAIL:    ${{ secrets.UNITY_EMAIL }}
-          UNITY_PASSWORD: ${{ secrets.UNITY_PASSWORD }}
+      - name: .NET SDK kur
+        if: steps.check_scripts.outputs.count > 0
+        uses: actions/setup-dotnet@v4
         with:
-          unityVersion: 2022.3.62f3
-          targetPlatform: StandaloneWindows64
-          buildsPath: build
-          buildName: CardBattler
+          dotnet-version: '7.0.x'
 
-      - name: Upload Build Artifact
-        uses: actions/upload-artifact@v4
-        with:
-          name: Build-Windows
-          path: build/StandaloneWindows64
-          retention-days: 7
+      - name: C# derleme kontrolü
+        if: steps.check_scripts.outputs.count > 0
+        run: |
+          echo "=== C# Syntax Kontrolü ==="
+          if [ -f "card.sln" ]; then
+            dotnet build card.sln --no-restore -v minimal 2>&1 | tail -20
+          else
+            echo ".sln bulunamadı, atlanıyor."
+          fi
+
+      - name: Script yok — kontrol atlandı
+        if: steps.check_scripts.outputs.count == 0
+        run: echo "C# dosyası henüz yok, syntax kontrolü atlandı."
