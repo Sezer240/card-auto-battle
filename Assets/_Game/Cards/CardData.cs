@@ -19,6 +19,7 @@ public class CardData : ScriptableObject
     
     [Header("Özellikler")]
     public bool cardToplama;
+    public int cardToplamaSuresi;
     public bool cardCalma;
     public bool cardGizlenme;
     public bool cardTespit;
