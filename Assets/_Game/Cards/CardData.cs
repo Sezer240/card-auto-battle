@@ -7,8 +7,26 @@ public class CardData : ScriptableObject
     [Header("Temel Bilgiler")]
     public string cardName;
     public enum cardIrk;
-    public enum cardTip;
+    {
+    Düşmüş
+    Direnen,
+    Gölge
+    }
+    
+    public enum cardTip
+    {
+    Destek,
+    Hasar,
+    Suikastçi,
+    Tank
+    }
     public enum cardNadirlik;
+    {
+    Sıradan,
+    Nadir,
+    Destansı,
+    Efsanevi
+    }
     
     [Header("İstatistikler")]
     public int cardDeger; //Kart maliyeti. Kartı çağırmak için gereken enerji
