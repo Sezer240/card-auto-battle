@@ -4,21 +4,21 @@ using UnityEngine;
 public class CardData : ScriptableObject 
 {
 
-    public enum cardIrk;
+    public enum CardIrk
     {
     Düşmüş,
     Direnen,
     Gölge
     }
     
-    public enum cardTip
+    public enum CardTip
     {
     Destek,
     Hasar,
     Suikastçi,
     Tank
     }
-    public enum cardNadirlik;
+    public enum CardNadirlik
     {
     Sıradan,
     Nadir,
