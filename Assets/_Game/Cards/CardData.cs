@@ -3,9 +3,7 @@ using UnityEngine;
 
 public class CardData : ScriptableObject 
 {
-    
-    [Header("Temel Bilgiler")]
-    public string cardName;
+
     public enum cardIrk;
     {
     Düşmüş,
@@ -27,7 +25,15 @@ public class CardData : ScriptableObject
     Destansı,
     Efsanevi
     }
+
     
+    [Header("Temel Bilgiler")]
+    public string cardName;
+    public CardIrk cardIrk;
+    public CardTip cardTip;
+    public CardNadirlik cardNadirlik;
+    
+        
     [Header("İstatistikler")]
     public int cardDeger; //Kart maliyeti. Kartı çağırmak için gereken enerji
     public int cardCan;
