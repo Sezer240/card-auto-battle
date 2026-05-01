@@ -8,7 +8,7 @@ public class CardData : ScriptableObject
     public string cardName;
     public enum cardIrk;
     {
-    Düşmüş
+    Düşmüş,
     Direnen,
     Gölge
     }
