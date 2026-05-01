@@ -1,3 +1,4 @@
+using UnityEngine;
 [CreateAssetMenu (fileName = "NewCard", menuName = "Card Battler/Card Data")]
 
 public class CardData : ScriptableObject 
