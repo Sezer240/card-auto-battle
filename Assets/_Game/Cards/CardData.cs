@@ -29,6 +29,8 @@ public class CardData : ScriptableObject
     
     [Header("Temel Bilgiler")]
     public string cardName;
+    public string cardAciklama;
+    public Sprite cardGorsel;
     public CardIrk cardIrk;
     public CardTip cardTip;
     public CardNadirlik cardNadirlik;
