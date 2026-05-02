@@ -28,7 +28,7 @@ MonoBehaviour:
   cardHiz: 0.5
   cardDefans: 30
   cardToplama: 1
-  cardToplamaSuresi: 0.3333333
+  cardToplamaSuresi: 0.34
   cardCalma: 1
   cardGizlenme: 0
   cardTespit: 0
