@@ -44,7 +44,7 @@ public class CardData : ScriptableObject
     
     [Header("Özellikler")]
     public bool cardToplama; //Kart oyundayken birkaç turda bir enerji kazandırır
-    public int cardToplamaSuresi;
+    public float cardToplamaSuresi;
     public bool cardCalma; //Son darbeyi vurduğu rakip kartın değerinin bir kısmını kazandırır
     public bool cardGizlenme; //İlk darbeyi vurmadan önce görünmez
     public bool cardTespit; //Gizlenmeyi iptal eder
