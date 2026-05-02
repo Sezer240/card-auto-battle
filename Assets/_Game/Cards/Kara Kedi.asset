@@ -31,3 +31,4 @@ MonoBehaviour:
   cardGizlenme: 1
   cardTespit: 0
   cardYakma: 0
+    cardAtesDirenci: 1
