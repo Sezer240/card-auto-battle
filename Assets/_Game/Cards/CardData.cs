@@ -38,6 +38,7 @@ public class CardData : ScriptableObject
     public int cardDeger; //Kart maliyeti. Kartı çağırmak için gereken enerji
     public int cardCan;
     public bool cardZirh; //Ek can ya da ön can. İlk darbeyi karşılar. 0 olup kırılsa bile o saldırı ana cana vuramaz
+    public int cardZirhCani; //Zırhın canı. Zırh kırılmadan önce dayanabileceği hasar miktarı
     public int cardHasar;
     public float cardHiz;
     public int cardDefans; //Yediği bütün saldırıları azaltır. 120 hasar - 30 defans = 90 can gider.
@@ -51,3 +52,4 @@ public class CardData : ScriptableObject
     public bool cardYakma;
 
 }
+
