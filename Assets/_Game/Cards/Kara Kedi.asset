@@ -1,0 +1,30 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf5be44b7e974748b2311d1e43bfa76, type: 3}
+  m_Name: Kara Kedi
+  m_EditorClassIdentifier: 
+  cardName: 
+  cardIrk: 0
+  cardTip: 0
+  cardNadirlik: 0
+  cardDeger: 0
+  cardCan: 0
+  cardZirh: 0
+  cardHasar: 0
+  cardHiz: 0
+  cardDefans: 0
+  cardToplama: 0
+  cardToplamaSuresi: 0
+  cardCalma: 0
+  cardGizlenme: 0
+  cardTespit: 0
+  cardYakma: 0
