@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf5be44b7e974748b2311d1e43bfa76, type: 3}
+  m_Name: "Toplay\u0131c\u0131"
+  m_EditorClassIdentifier: 
+  cardName: "Toplay\u0131c\u0131"
+  cardAciklama: "Bir elindeki ay\xE7i\xE7e\u011Fi ile \u0131\u015F\u0131k toplar,
+    Di\u011Fer elinde ki orakla son darbeyi vurdu\u011Fu d\xFC\u015Fmandan \u0131\u015F\u0131k
+    \xE7alar. Ortalama istatistik. Y\xFCksek de\u011Fer."
+  cardGorsel: {fileID: 0}
+  cardIrk: 1
+  cardTip: 0
+  cardNadirlik: 1
+  cardDeger: 60
+  cardCan: 480
+  cardZirh: 0
+  cardZirhCani: 0
+  cardHasar: 80
+  cardHiz: 0.5
+  cardDefans: 30
+  cardToplama: 1
+  cardToplamaSuresi: 0.3333333
+  cardCalma: 1
+  cardGizlenme: 0
+  cardTespit: 0
+  cardYakma: 0
