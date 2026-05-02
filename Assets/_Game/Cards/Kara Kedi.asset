@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf5be44b7e974748b2311d1e43bfa76, type: 3}
+  m_Name: Kara Kedi
+  m_EditorClassIdentifier: 
+  cardName: Kara kedi
+  cardAciklama: "Koca pen\xE7eli siyah bir y\xFCksek hasar suikast\xE7i."
+  cardGorsel: {fileID: 0}
+  cardIrk: 2
+  cardTip: 2
+  cardNadirlik: 2
+  cardDeger: 40
+  cardCan: 260
+  cardZirh: 0
+  cardZirhCani: 0
+  cardHasar: 200
+  cardHiz: 1
+  cardDefans: 20
+  cardToplama: 0
+  cardToplamaSuresi: 0
+  cardCalma: 0
+  cardGizlenme: 1
+  cardTespit: 0
+  cardYakma: 0
+    cardAtesDirenci: 1

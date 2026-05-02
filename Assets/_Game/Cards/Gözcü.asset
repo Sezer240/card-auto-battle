@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abf5be44b7e974748b2311d1e43bfa76, type: 3}
+  m_Name: "G\xF6zc\xFC"
+  m_EditorClassIdentifier: 
+  cardName: "G\xF6zc\xFC"
+  cardAciklama: "Gizlenmi\u015Fleri ortya \xE7\u0131kar\u0131r. Ortalama istatistik"
+  cardGorsel: {fileID: 0}
+  cardIrk: 1
+  cardTip: 0
+  cardNadirlik: 1
+  cardDeger: 45
+  cardCan: 420
+  cardZirh: 0
+  cardZirhCani: 0
+  cardHasar: 100
+  cardHiz: 1
+  cardDefans: 25
+  cardToplama: 0
+  cardToplamaSuresi: 0
+  cardCalma: 0
+  cardGizlenme: 0
+  cardTespit: 1
+  cardYakma: 0
+    cardAtesDirenci: 0
