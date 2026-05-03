@@ -98,19 +98,33 @@ git lfs pull
 ```
 Assets/
 ├── _Game/
-│   ├── Cards/          # ScriptableObject kart tanımları
+│   ├── Cards/          # ScriptableObject kart tanımları (.asset dosyaları)
+│   ├── Data/           # CardData.cs, CardDatabase.cs, CardEnums.cs — veri modelleri ve enum tanımları
+│   ├── Art/            # Kart görselleri, karakter sprite'ları, UI texture'ları
 │   ├── Characters/     # Karakter prefab'ları ve script'leri
-│   ├── Combat/         # BattleManager, TargetSelector
+│   ├── Combat/         # BattleManager, TargetSelector, BattleField.cs, SlotPoint.cs
+│   ├── Systems/        # GameManager, SceneLoader, AIOpponent.cs (oyun akışı)
 │   ├── Economy/        # ShopManager, GoldSystem
-│   ├── Progression/    # RunManager (roguelite sefer)
+│   ├── Progression/    # RunManager — yalnızca roguelite run verisi
+│   ├── VFX/            # Hasar particle'ları, ölüm efektleri
 │   ├── UI/             # CardView, HandUI, BattleHUD
 │   └── Audio/          # Ses efektleri ve müzik
-├── Scenes/
+├── Settings/           # URP pipeline asset'leri (UniversalRenderPipelineGlobalSettings.asset dahil)
+├── Scenes/             # .unity sahneleri (Sprint 1 sonunda Battle.unity eklenecek)
 │   ├── MainMenu
 │   ├── Battle
 │   └── Shop
-└── Tests/              # EditMode + PlayMode testleri
+└── Tests/
+    ├── EditMode/       # CardAutoBattle.EditMode.asmdef — Unity Test Runner görür
+    └── PlayMode/       # CardAutoBattle.PlayMode.asmdef — Unity Test Runner görür
 ```
+
+> **Klasör notları:**
+> - `Systems/` ve `Progression/` kasıtlı olarak ayrıdır: `Progression/` yalnızca roguelite run verisini tutar; `Systems/` oyun akışını (sahne geçişi, AI, GameManager) yönetir.
+> - `SlotPoint.cs` → `Combat/` altına gidecek; savaş alanı slot'ları `Characters/` değil `Combat/` sorumluluğundadır.
+> - Enum'lar (`CardIrk`, `CardTip`, `CardNadirlik`) `_Game/Data/CardEnums.cs`'de tanımlıdır; `CardData` dahil tüm sistemler buradan referans alır.
+> - `Art/` → kart görseli sprite'ları, karakter texture'ları ve UI ikonları burada tutulur; `cardGorsel` alanı için kaynak dizindir.
+> - `CardDatabase` asset'i oluşturmak için: Project penceresinde sağ tık → Card Battler → Card Database.
 
 ---
 
@@ -158,7 +172,7 @@ chore: yardımcı işler (paket güncelleme, config, gitignore vb.)
 | Sprint | Hafta | Odak | Teslim |
 |--------|-------|------|--------|
 | 1 | 1–2 | Temel altyapı | El'deki kartları alana yerleştir |
-| 2 | 3–4 | Savaş motoru | İki takım otomatik çarpışıyor |
+| 2 | 3–4 | Savaş motoru | İki takım otomatik çarpışıyor; `Settings/` düzenlenir, `Battle.unity` ilk commit |
 | 3 | 5–6 | Kart sistemi | Synergy bonusları çalışıyor |
 | 4 | 7–8 | Oyun döngüsü | Baştan sona oynanabilir sefer |
 | 5 | 9–10 | Cila & build | Demo-ready, portföy materyali hazır |
