@@ -1,0 +1,21 @@
+{
+    "name": "CardAutoBattle.PlayMode",
+    "rootNamespace": "CardAutoBattle.Tests.PlayMode",
+    "references": [
+        "UnityEngine.TestRunner",
+        "CardAutoBattle.Runtime"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": true,
+    "precompiledReferences": [
+        "nunit.framework.dll"
+    ],
+    "autoReferenced": false,
+    "defineConstraints": [
+        "UNITY_INCLUDE_TESTS"
+    ],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
