@@ -13,9 +13,9 @@ public class CharacterData : ScriptableObject
     // ─── Kimlik ───────────────────────────────────────────────────────────────
     [Header("Kimlik")]
     public string cardName       = "Yeni Karakter";
-    public Rarity  rarity        = Rarity.Common;
-    public Race    race          = Race.Direnen;
-    public CardType cardType     = CardType.Hasar;
+    public CardIrk  CardIrk        = CardIrk.Common;
+    public CardTip    CardTip          = CardTip.Direnen;
+    public CardNadirlik CardNadirlik     = CardNadirlik.Hasar;
     [Tooltip("Işık değeri — kartı oyuna sürmek için gereken ışık maliyeti")]
     public int     lightCost     = 50;
 
@@ -63,25 +63,25 @@ public class CharacterData : ScriptableObject
 
 // ─── Enum Tanımları ───────────────────────────────────────────────────────────
 
-public enum Rarity
+public enum CardIrk
 {
-    Common,     // Sıradan
-    Rare,       // Nadir
-    Epic,       // Destansı
-    Legendary   // Efsanevi
-}
-
-public enum Race
-{
+    Düşmüş,
     Direnen,
-    Golge,      // Gölge
-    Dusmüs      // Düşmüş
+    Gölge
 }
 
-public enum CardType
+public enum CardTip
 {
-    Tank,
-    Hasar,
     Destek,
-    Suikastci   // Suikastçi
+    Hasar,
+    Suikastçi,
+    Tank
+}
+
+public enum CardNadirlik
+{
+    Sıradan,
+    Nadir,
+    Destansı,
+    Efsanevi
 }
