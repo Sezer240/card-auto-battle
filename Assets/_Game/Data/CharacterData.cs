@@ -61,27 +61,3 @@ public class CharacterData : ScriptableObject
     public RuntimeAnimatorController animatorController;
 }
 
-// ─── Enum Tanımları ───────────────────────────────────────────────────────────
-
-public enum CardIrk
-{
-    Düşmüş,
-    Direnen,
-    Gölge
-}
-
-public enum CardTip
-{
-    Destek,
-    Hasar,
-    Suikastçi,
-    Tank
-}
-
-public enum CardNadirlik
-{
-    Sıradan,
-    Nadir,
-    Destansı,
-    Efsanevi
-}
