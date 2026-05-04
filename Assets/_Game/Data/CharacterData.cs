@@ -13,9 +13,9 @@ public class CharacterData : ScriptableObject
     // ─── Kimlik ───────────────────────────────────────────────────────────────
     [Header("Kimlik")]
     public string cardName       = "Yeni Karakter";
-    public CardIrk  CardIrk        = CardIrk.Common;
-    public CardTip    CardTip          = CardTip.Direnen;
-    public CardNadirlik CardNadirlik     = CardNadirlik.Hasar;
+    public CardIrk  CardIrk        = CardIrk.Direnen;
+    public CardTip    CardTip          = CardTip.hasar;
+    public CardNadirlik CardNadirlik     = CardNadirlik.Sıradan;
     [Tooltip("Işık değeri — kartı oyuna sürmek için gereken ışık maliyeti")]
     public int     lightCost     = 50;
 
