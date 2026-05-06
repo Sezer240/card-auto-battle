@@ -5,10 +5,14 @@ using UnityEngine.SceneManagement;
 public class SceneLoader : MonoBehaviour
 {
     private void Start()
+{
+    if (GameManager.Instance == null)
     {
-        // GameManager'daki state değişimlerini dinlemeye başla
-        GameManager.Instance.OnStateChanged += HandleStateChange;
+        Debug.LogError("[SceneLoader] GameManager.Instance bulunamadı! Init sahnesinden mi başlatıldı?");
+        return;
     }
+    GameManager.Instance.OnStateChanged += HandleStateChange;
+}
 
     private void OnDestroy()
     {
@@ -20,19 +24,25 @@ public class SceneLoader : MonoBehaviour
     }
 
     private void HandleStateChange(GameState newState)
+{
+    switch (newState)
     {
-        switch (newState)
-        {
-            case GameState.MainMenu:
-                StartCoroutine(LoadSceneAsyncRoutine("MainMenu"));
-                break;
-            case GameState.Preparation:
-            case GameState.Battle:
-                // Savaş veya hazırlık durumunda Battle sahnesini yükle
-                StartCoroutine(LoadSceneAsyncRoutine("Battle"));
-                break;
-        }
+        case GameState.MainMenu:
+            StartCoroutine(LoadSceneAsyncRoutine("MainMenu"));
+            break;
+        case GameState.Preparation:
+        case GameState.Battle:
+            StartCoroutine(LoadSceneAsyncRoutine("Battle"));
+            break;
+        case GameState.PostBattle:
+            // Sprint 3'te implement edilecek (skor ekranı, ödül UI)
+            Debug.Log("[SceneLoader] PostBattle state'i henüz işlenmedi.");
+            break;
+        default:
+            Debug.LogWarning($"[SceneLoader] Tanınmayan state: {newState}");
+            break;
     }
+}
 
     private IEnumerator LoadSceneAsyncRoutine(string sceneName)
     {

@@ -2,13 +2,7 @@ using System;
 using UnityEngine;
 
 // 1. Oyun Durumları (GameState enum)
-public enum GameState 
-{
-    MainMenu,
-    Preparation,
-    Battle,
-    PostBattle
-}
+
 
 public class GameManager : MonoBehaviour 
 {

@@ -30,22 +30,5 @@ public class AIOpponent : MonoBehaviour
         return aiDeck;
     }
 
-    /* 
-    ===================================================================
-    ZULA (SPRINT 2 İÇİN SAKLANAN TERMİNATÖR AI ALGORİTMASI)
-    ===================================================================
-    float CalculateCardScore(CardData card) {
-        float score = 0f;
-        float turnDps = card.cardHasar / Mathf.Max(1f, card.cardHiz);
-        score += turnDps * 2.5f; 
-        score += card.cardCan * 0.5f; 
-        score += card.cardDefans * 3f; 
-        if (card.cardZirh) { score += card.cardZirhCani * 0.5f + 20f; }
-        score -= card.cardDeger * 1.5f;
-        if (card.cardYakma) score += 25f;       
-        if (card.cardGizlenme) score += 15f;    
-        // ... Sprint 2 gelince bu mantık devreye alınacak!
-    }
-    ===================================================================
-    */
+    
 }
