@@ -30,4 +30,26 @@ public class CardData : ScriptableObject
     public bool cardTespit;         // Gizlenmeyi iptal eder
     public bool cardYakma;          // Vurduğu düşman karakterine 3 tur yakma uygular.
     public bool cardAtesDirenci;    // Kartın yanmaya maruz kalmasını engeller.
+
+    /// <summary>
+    /// Koleksiyon verisini savaş runtime'ına dönüştürür.
+    /// BattleManager.StartBattle() çağrılmadan önce kullanılır.
+    /// </summary>
+    public CharacterData ToCharacterData()
+    {
+        var cd = ScriptableObject.CreateInstance<CharacterData>();
+        cd.cardName           = this.cardName;
+        cd.hp                 = this.cardCan;
+        cd.atk                = this.cardHasar;
+        cd.def                = this.cardDefans;
+        cd.hasArmor           = this.cardZirh;
+        cd.armorHp            = this.cardZirhCani;
+        cd.attackSpeedTurns   = Mathf.Max(1, Mathf.RoundToInt(this.cardHiz));
+        cd.hasStealth         = this.cardGizlenme;
+        cd.hasDetection       = this.cardTespit;
+        cd.canBurn            = this.cardYakma;
+        cd.hasLightCollection = this.cardToplama;
+        cd.canStealLight      = this.cardCalma;
+        return cd;
+    }
 }

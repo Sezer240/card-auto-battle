@@ -55,3 +55,7 @@ crash.dmp
 # Unity paket cache (Packages/ klasörü commit'lenir; sadece cache ignore)
 /[Pp]ackages/[Pp]ackageCache/
 /[Pp]ackages/com.unity.collab-proxy/Editor/
+
+# TextMeshPro — Package Manager tarafından yönetilir, Assets/ altına commit'lenmez
+/[Aa]ssets/TextMesh Pro/
+/[Aa]ssets/TextMesh Pro.meta
