@@ -4,7 +4,7 @@ on:
   pull_request:
     branches: [main, develop]
   push:
-    branches: [develop]
+    branches: [main, develop]
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.ref }}
@@ -28,9 +28,16 @@ jobs:
           echo "=== Zorunlu klasörler kontrol ediliyor ==="
           required_dirs=(
             "Assets/_Game/Cards"
+            "Assets/_Game/Data"
+            "Assets/_Game/Art"
             "Assets/_Game/Characters"
             "Assets/_Game/Combat"
+            "Assets/_Game/Systems"
+            "Assets/_Game/Economy"
+            "Assets/_Game/Progression"
+            "Assets/_Game/VFX"
             "Assets/_Game/UI"
+            "Assets/_Game/Audio"
             "Assets/Scenes"
             "Assets/Tests/EditMode"
             "Assets/Tests/PlayMode"
