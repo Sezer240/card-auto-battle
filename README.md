@@ -98,25 +98,25 @@ git lfs pull
 ```
 Assets/
 ├── _Game/
-│   ├── Cards/          # ScriptableObject kart tanımları (.asset dosyaları)
-│   ├── Data/           # CardData.cs, CardDatabase.cs, CardEnums.cs — veri modelleri ve enum tanımları
-│   ├── Art/            # Kart görselleri, karakter sprite'ları, UI texture'ları
-│   ├── Characters/     # Karakter prefab'ları ve script'leri
-│   ├── Combat/         # BattleManager, TargetSelector, BattleField.cs, SlotPoint.cs
-│   ├── Systems/        # GameManager, SceneLoader, AIOpponent.cs (oyun akışı)
-│   ├── Economy/        # ShopManager, GoldSystem
-│   ├── Progression/    # RunManager — yalnızca roguelite run verisi
-│   ├── VFX/            # Hasar particle'ları, ölüm efektleri
-│   ├── UI/             # CardView, HandUI, BattleHUD
-│   └── Audio/          # Ses efektleri ve müzik
-├── Settings/           # URP pipeline asset'leri (UniversalRenderPipelineGlobalSettings.asset dahil)
-├── Scenes/             # .unity sahneleri (Sprint 1 sonunda Battle.unity eklenecek)
+│   ├── Cards/          
+│   ├── Data/           
+│   ├── Art/            
+│   ├── Characters/     
+│   ├── Combat/         
+│   ├── Systems/        
+│   ├── Economy/        
+│   ├── Progression/    
+│   ├── VFX/            
+│   ├── UI/             
+│   └── Audio/          
+├── Settings/           
+├── Scenes/             
 │   ├── MainMenu
 │   ├── Battle
 │   └── Shop
 └── Tests/
-    ├── EditMode/       # CardAutoBattle.EditMode.asmdef — Unity Test Runner görür
-    └── PlayMode/       # CardAutoBattle.PlayMode.asmdef — Unity Test Runner görür
+    ├── EditMode/       
+    └── PlayMode/       
 ```
 
 > **Klasör notları:**
